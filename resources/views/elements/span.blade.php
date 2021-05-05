@@ -1,0 +1,1 @@
+<span {!! $dynamic_fields !!}> @if($icon)<i class="fa {!! $icon !!}"></i> @endif{!! $content !!}</span>

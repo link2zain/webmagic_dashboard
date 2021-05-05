@@ -1,0 +1,26 @@
+<?php
+
+
+$namespace;
+
+use Webmagic\Dashboard\Core\ComplexElement;
+
+class $className extends ComplexElement
+{
+    /** @var  string Component view name */
+    protected $view = '$viewName';
+
+    /** @var  array Sections available in page */
+    protected $available_fields = [
+        //         'name' => [
+        //              'type' => ''                //string, bool, renderable, array
+        //              'default' => $value,        //default value
+        //              'acceptable_values' => []   //array of available values
+        //              'array_acceptable' => false // additional show if array field acceptable
+        //         ]
+        //     ];
+    ];
+
+    /** @var  string Default section for current component */
+    protected $default_field = '$defaultField';
+}

@@ -1,0 +1,41 @@
+{
+  "name": "webmagic/dashboard",
+  "description": "Package for base dashboard preparing",
+  "prefer-stable": true,
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yevhen Saienko",
+      "email": "eugen.saenko@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "7.1 - 7.3",
+    "ext-json": "*",
+    "laravel/framework": "5.5 - 6",
+    "webmagic/core": "^1.0 || dev-laravel_6",
+    "graham-campbell/markdown": "10 - 12.0",
+    "ocramius/package-versions": "1.4 - 1.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "6.0 - 9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Webmagic\\Dashboard\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Webmagic\\Dashboard\\DashboardServiceProvider"
+      ]
+    }
+  }
+}

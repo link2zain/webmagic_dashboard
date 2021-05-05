@@ -1,0 +1,11 @@
+//@import 'functions';
+@import '../variables';
+//Use for include css config files
+ 
+@import 'functions';
+@include add-font('../fonts/fa-solid-900','Font Awesome', normal, 900);
+@include add-font('../fonts/fa-regular-400','Font Awesome', normal, 400);
+@include add-font('../fonts/fa-brands-400','Font Awesome', normal, 200);
+@include add-font('../fonts/fa-brands-400','Font Awesome', normal, 200);
+@include add-font('../fonts/summernote','summernote', normal, normal);
+

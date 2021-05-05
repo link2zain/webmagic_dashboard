@@ -1,0 +1,69 @@
+// Magnific styles import
+@import "../../node_modules/magnific-popup/src/css/main";
+
+//@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+
+// webmagic plugins
+@import "magic_popup";
+@import "spinner";
+
+//FormSender styles import
+ @import 'sendform';
+
+//Plugin import
+
+@import 'jquery.datetimepicker';
+
+//@import 'dataTables/jquery.dataTables';
+//@import "dataTables/select.dataTables";
+//@import 'dataTables/dataTables.checkboxes';
+
+@import './fine-uploader-new';
+
+@import './daterangepicker';
+
+// Dropzone
+@import 'dropzone/basic';
+@import 'dropzone/dropzone';
+// END Dropzone
+
+//ckEditor111
+.some{
+  display: none;}
+
+iframe.cke_reset,
+textarea.cke_source,
+textarea.cke_reset{
+  padding: 0;
+}
+//END ckEditor
+
+//@import 'trumbowyg';
+@import 'select2';
+@import 'bootstrap-colorpicker';
+
+@import 'filepond';
+@import 'filepond-plugin-image-preview';
+
+//iCheck - Checkbox & Radio Inputs
+//@import 'minimal/_all';
+//@import 'minimal/red';
+//@import 'minimal/blue';
+//@import 'minimal/minimal';
+
+@import 'bootstrap';
+@import 'OverlayScrollbars';
+
+
+@import "datapicker/bootstrap-datepicker3";
+
+//AdminLte
+/*@import './adminlte/_all-skins.min';
+@import './adminlte/_adminLTE.min';*/
+
+@import './adminlte/_adminlte';
+
+//@import 'summernote';
+@import 'summernote-bs4';
+@import 'prismjs';

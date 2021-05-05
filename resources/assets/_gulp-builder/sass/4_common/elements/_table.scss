@@ -1,0 +1,18 @@
+.table{
+  &.vertical-middle{
+    &>tbody>tr>td,
+    &>tbody>tr>th,
+    &>tfoot>tr>td,
+    &>tfoot>tr>th,
+    &>thead>tr>td,
+    &>thead>tr>th{
+      vertical-align: middle;
+    }
+  }
+  tr.vertical-middle{
+    &>td,
+    &>th{
+      vertical-align: middle;
+    }
+  }
+}

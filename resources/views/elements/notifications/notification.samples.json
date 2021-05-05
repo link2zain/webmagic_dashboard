@@ -1,0 +1,25 @@
+{
+  "class" : [
+    "bg-green",
+    "box-success",
+    "bg-red",
+    "box-danger"
+  ],
+  "borderClass" : [
+    "with-border"
+  ],
+  "iconLeft" : [
+    "fa-check",
+    "fa-ban"
+  ],
+  "title": [
+    "Импорт выполнен"
+  ],
+  "btnClass" : [
+    "bg-green",
+    "bg-red"
+  ],
+  "content" : [
+    " Файл 1122.jpg. был успешно импортирован"
+  ]
+}

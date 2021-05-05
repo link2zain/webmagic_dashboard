@@ -1,0 +1,1 @@
+<li class="divider {{data_get($item, 'class', '')}}"></li>

@@ -1,0 +1,72 @@
+
+.switch-inp {
+  display: none;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  transition: background 1.4s;
+  &-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    transform: translateY(0);
+    transition: left .3s,transform .3s,-webkit-transform .3s,-o-transform .3s;
+    &:before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 58%;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      transform: translateY(0);
+      transition: left .3s,transform .3s,-webkit-transform .3s,-o-transform .3s;
+    }
+  }
+}
+.switch-inp:checked + .switch .switch-slider {
+  background-color: #00a65a;
+}
+.switch-inp:checked + .switch .switch-slider:before {
+  left: 100%;
+  transform: translate(-100%);
+}
+.switch-inp:not(:checked) + .switch .switch-slider {
+  background-color: #fff!important;
+}
+
+
+/* image small preview*/
+.mailbox-attachment-icon.has-img{
+  background: #fff;
+}
+.mailbox-attachment-name,
+.image-name{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.js-select2[multiple]{
+  height: 33px;
+  resize: none;
+}
+
+
+@import "checkbox";
+@import "table";
+@import "size";
+

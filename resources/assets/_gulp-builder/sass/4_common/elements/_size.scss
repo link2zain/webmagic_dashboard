@@ -1,0 +1,67 @@
+//max-width
+.mw{
+  &-25{
+    max-width: 25%;
+  }
+  &-50{
+    max-width: 50%;
+  }
+  &-75{
+    max-width: 75%;
+  }
+}
+
+.wfix{
+  &-50{
+    width: 50px;
+  }
+  &-75{
+    width: 75px;
+  }
+  &-100{
+    width: 100px;
+  }
+  &-200{
+    width: 200px;
+  }
+  &-auto{
+    width: auto;
+  }
+}
+
+@each $breakpoint, $breakpointValue in $grid-breakpoints {
+
+  @media screen and (max-width: $breakpointValue) {
+    //max width .mw-md-25
+    .mw-#{$breakpoint}{
+      &-25{
+        max-width: 25%;
+      }
+      &-50{
+        max-width: 50%;
+      }
+      &-75{
+        max-width: 75%;
+      }
+
+    }
+
+    .wfix-#{$breakpoint}{
+      &-50{
+        width: 50px;
+      }
+      &-75{
+        width: 75px;
+      }
+      &-100{
+        width: 100px;
+      }
+      &-200{
+        width: 200px;
+      }
+      &-auto{
+        width: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+<div {!! $dynamic_fields !!}>{!! $content !!}</div>

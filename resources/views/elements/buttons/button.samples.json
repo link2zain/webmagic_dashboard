@@ -1,0 +1,19 @@
+{
+  "class" : [
+    "btn-primary",
+    "btn-success",
+    "btn-info",
+    "btn-danger",
+    "btn-warning"
+  ],
+  "icon" : [
+    "fa-amazon",
+    "fa-calendar-times-o",
+    "fa-heart"
+  ],
+  "content": [
+    "Кнопка 1",
+    "Ryjgrf 2",
+    "Action"
+  ]
+}

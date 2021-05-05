@@ -1,0 +1,20 @@
+@import 'sprite';
+@include sprites($spritesheet-sprites); //Use for sprites
+@import 'elements/elements';
+@import 'blocks/blocks';
+@import 'responsive'; 
+
+//for fine uploader
+.qq-edit-filename-icon {
+	background: url("../../img/edit.gif");
+}
+.qq-upload-spinner {
+	background: url("../../img/loading.gif");
+}
+.qq-drop-processing-spinner {
+	background: url("../../img/processing.gif");
+}
+
+@media screen and (max-width: 1200px){
+
+}

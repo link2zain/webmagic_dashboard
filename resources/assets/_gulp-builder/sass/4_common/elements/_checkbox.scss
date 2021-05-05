@@ -1,0 +1,134 @@
+/* checkbox */
+$c-primary: #3c8dbc;
+$c-info: #00c0ef;
+$c-danger: #f56954;
+$c-success: #00a65a;
+$c-default: #dadada;
+
+.form-inline .checkbox, .form-inline .radio{
+  display: none;
+}
+
+.checkbox{
+  display: none;
+  &:checked+.checkbox-lbl{
+    &:before {
+      border-color: $c-default !important;
+    }
+    &:after{
+      display: block;
+    }
+  }
+  &-lbl{
+    cursor: pointer;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    line-height: 18px;
+    &:before{
+      content: '';
+      display: inline-block;
+      border: 1px solid $c-default;
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      margin-right: 3px;
+      vertical-align: middle;
+    }
+    &:after{
+      content: '';
+      display: none;
+      position: absolute;
+      left: 3px;
+      top: 5px;
+      width: 12px;
+      height: 7px;
+      border-left: 3px solid darken($c-primary, 10%);
+      border-bottom: 3px solid darken($c-primary, 10%);
+      transform: rotate(-45deg);
+      transition: background .2s;
+    }
+    &:hover{
+      &:before{
+        border-color: $c-primary;
+      }
+    }
+  }
+  &.__info{
+    &+.checkbox-lbl{
+      &:hover{
+        &:before {
+          border-color: $c-info;
+        }
+      }
+      &:after{
+        border-color: darken($c-info, 10%);
+      }
+    }
+  }
+  &.__danger{
+    &+.checkbox-lbl{
+      &:hover{
+        &:before {
+          border-color: $c-danger;
+        }
+      }
+      &:after{
+        border-color: darken($c-danger, 10%);
+      }
+    }
+  }
+  &.__success{
+    &+.checkbox-lbl{
+      &:hover{
+        &:before {
+          border-color: $c-success;
+        }
+      }
+      &:after{
+        border-color: darken($c-success, 10%);
+      }
+    }
+  }
+}
+.radio{
+  @extend .checkbox;
+
+  &-lbl{
+    @extend .checkbox-lbl;
+    &:before{
+      border-radius: 50%;
+    }
+    &:after{
+      transform: none;
+      border: none;
+      background: $c-primary;
+      width: 8px;
+      height: 8px;
+      top: 7px;
+      left: 5px;
+      border-radius: 50%;
+    }
+  }
+  &.__success{
+    &+.checkbox-lbl{
+      &:after{
+        background: darken($c-success, 10%);
+      }
+    }
+  }
+  &.__danger{
+    &+.checkbox-lbl{
+      &:after{
+        background: darken($c-danger, 10%);
+      }
+    }
+  }
+  &.__info{
+    &+.checkbox-lbl{
+      &:after{
+        background: darken($c-info, 10%);
+      }
+    }
+  }
+}
