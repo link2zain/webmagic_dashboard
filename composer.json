@@ -1,20 +1,20 @@
 {
-  "name": "webmagic/dashboard",
+  "name": "link2zain/webmagic_dashboard",
   "description": "Package for base dashboard preparing",
   "prefer-stable": true,
   "license": "MIT",
   "authors": [
     {
-      "name": "Yevhen Saienko",
-      "email": "eugen.saenko@gmail.com"
+      "name": "Zain Ul Abideen",
+      "email": "link2zain0@gmail.com"
     }
   ],
   "minimum-stability": "stable",
   "require": {
     "php": "7.1 - 7.3",
     "ext-json": "*",
-    "laravel/framework": "5.5 - 6",
-    "webmagic/core": "^1.0 || dev-laravel_6",
+    "laravel/framework": "5.5 - 7",
+    "link2zain/webmagic_core": "^1.0 || master",
     "graham-campbell/markdown": "10 - 12.0",
     "ocramius/package-versions": "1.4 - 1.5"
   },
